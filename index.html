@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CLOCKIE</title>
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+</head>
+<body>
+	<div class="navbar">
+		<a href="about.html">About Us</a>
+		<a href="contact.html">Contact Us</a>
+	</div>
+	<div class="container">
+		<div class=box1>
+			<div class="clock">
+				<div class="hour">
+					<div class="hr" id="hr"></div>
+				</div>
+				<div class="min">
+					<div class="mn" id="mn"></div>
+				</div>
+				<div class="sec">
+					<div class="sc" id="sc"></div>
+				</div>
+			</div>
+		</div>
+		<!--<div class="box2">
+			<select name="country" id="country">
+				<option value=IND>INDIA</option>
+				<option value=NYC>NEWYORK</option>
+				<option value=LON>LONDON</option>
+				<option value=TOK>TOKYO</option>
+			</select>
+		</div>-->
+		<div class="footer">
+		<p>copyright 2020 &copy</p>		
+		</div>
+	</div>
+	<script type="text/javascript">
+		const deg=6;
+		const hr=document.querySelector("#hr");
+		const mn=document.querySelector("#mn");
+		const sc=document.querySelector("#sc");
+		setInterval(()=>{
+			let day=new Date();
+			let hh=day.getHours()*30;
+			let mm=day.getMinutes()*deg;
+			let ss=day.getSeconds()*deg;
+			hr.style.transform=`rotateZ(${hh+(mm/12)}deg)`;
+			mn.style.transform=`rotateZ(${mm}deg)`;
+			sc.style.transform=`rotateZ(${ss}deg)`;
+		})
+		
+	</script>
+</body>
+</html>

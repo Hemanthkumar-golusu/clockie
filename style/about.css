@@ -1,0 +1,43 @@
+*{
+	padding: 0;
+	margin:0;
+}
+body{
+	background:rgba(0, 0, 0, 0.5)url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+	background-blend-mode: darken;
+	background-size: cover;
+}
+.box2{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+}
+.text{
+	width:600px;
+	font-size: 18px;
+	font-family: 'Merienda One', cursive;
+}
+.box1{
+	height:20vh;
+	position: absolute;
+	top:150px;
+	bottom: 30px;
+	left: 380px;
+	font-size: 25px;
+}
+.btn{
+	margin-top: 60px;
+	padding:10px;
+	border-radius: 10px;
+	background:none;
+	transition-duration: 0.5s;
+	cursor: pointer;
+	outline: none;
+}
+.btn:hover{
+	padding:14px;
+	font-size: 18px;
+	background-color: grey;
+}
